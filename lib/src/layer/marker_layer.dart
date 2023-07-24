@@ -78,6 +78,8 @@ enum AnchorAlign {
 /// Some properties defaults will absorb the values from the parent [MarkerLayer],
 /// if the reflected properties are defined there.
 class Marker {
+  final id;
+  
   final Key? key;
 
   /// Coordinates of the marker
@@ -122,6 +124,7 @@ class Marker {
   final AlignmentGeometry? rotateAlignment;
 
   Marker({
+    this.id,
     this.key,
     required this.point,
     required this.builder,
