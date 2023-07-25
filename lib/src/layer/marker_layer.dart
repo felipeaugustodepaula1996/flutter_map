@@ -72,6 +72,8 @@ enum AnchorAlign {
 
 /// Marker object that is rendered by [MarkerLayerWidget]
 class Marker {
+
+  final id;
   /// Coordinates of the marker
   final LatLng point;
 
@@ -111,6 +113,7 @@ class Marker {
   final AlignmentGeometry? rotateAlignment;
 
   Marker({
+    this.id,
     required this.point,
     required this.builder,
     this.key,
